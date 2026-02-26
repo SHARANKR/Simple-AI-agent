@@ -16,4 +16,4 @@ parser = StrOutputParser()
 
 chain = prompt | model | parser
 
-
+result = chain.invoke({"topic":"vegetables"})
