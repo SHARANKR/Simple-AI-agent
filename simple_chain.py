@@ -20,3 +20,5 @@ chain = prompt | model | parser
 result = chain.invoke({"topic":"vegetables"})
 
 print(result)
+
+chain.get_graph().print_ascii()
