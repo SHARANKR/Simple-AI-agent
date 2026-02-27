@@ -39,7 +39,7 @@ text = """
 The Transformer architecture, introduced in the groundbreaking paper Attention Is All You Need by researchers at Google, has fundamentally transformed the field of Artificial Intelligence and Natural Language Processing. Unlike traditional sequential models such as RNN and LSTM, Transformers rely on a powerful mechanism called self-attention, which allows the model to understand relationships between words regardless of their distance in a sentence while also enabling parallel processing, making training significantly faster and more efficient. The architecture typically consists of components such as token embeddings, positional encoding to preserve word order, multi-head self-attention to capture different contextual relationships, feed-forward neural networks for deeper representation learning, and residual connections with layer normalization to stabilize training. This architecture has become the backbone of many modern AI systems, powering models like BERT, GPT, and T5, which are widely used in applications such as conversational AI, intelligent search, code generation, AI assistants, and autonomous AI agents, making Transformers one of the most important innovations driving today’s AI revolution.
 """
 
-result = chain.invoke({"topic":text})
+result = chain.invoke({"text":text})
 
 print(result)
 
